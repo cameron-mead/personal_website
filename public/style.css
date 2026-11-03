@@ -17,6 +17,7 @@ body {
 
     margin:             0;
     padding-top:        50px;
+    padding-bottom:     50px;
     min-height:         100vh;                          /* force body to take up 100% of viewport */
     box-sizing:         border-box;                     /* don't include padding in border */
 
@@ -77,6 +78,21 @@ a:active {
     text-align:         left;
 }
 
+.gallery {
+    flex-direction:     row;
+    flex-wrap:          wrap;
+    gap:                1rem;
+    justify-content:    space-evenly;
+}
+
+.gallery-image {
+    height:             20rem;
+    width:              auto;
+    max-width:          100%;
+    border-radius:      .5rem;
+    border:             1px solid #000000;
+}
+
 .section {
     margin-top:         4rem;
 
@@ -101,6 +117,19 @@ a:active {
     padding-bottom:     5px;
     padding-left:       10px;
     padding-right:      10px;
+
+    margin-left:        5px;
+    margin-right:       5px;
+}
+
+.squeeze {
+    padding-top:        2px;
+    padding-bottom:     2px;
+    line-height:        1;
+}
+
+.date {
+    font-weight:        bold;
 }
 
 /* style by id */
@@ -124,6 +153,14 @@ a:active {
     margin-top:         3rem;
 }
 
+#invisible-view {
+    border:             none;
+    background-color:   transparent;
+    color:              transparent;
+    pointer-events:     none;
+    user-select:        none;
+}
+
 /* background image */
 body::before {
     content:            '';
@@ -131,7 +168,7 @@ body::before {
     inset:              0;
     z-index:            -1;
 
-    background-image:   url('./bit.jpeg');
+    background-image:   url('./resources/bit.jpeg');
     background-repeat:  no-repeat;
     background-position:center center;
     background-size:    contain;
