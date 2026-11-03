@@ -173,5 +173,5 @@ body::before {
     background-position:center center;
     background-size:    contain;
 
-    opacity:            0.20;
+    opacity:            1; /* 0.20 */
 }
