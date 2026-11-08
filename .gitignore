@@ -1,0 +1,4 @@
+
+# exclude persistence while hosted under rit
+/persistence/
+/persistence/*
